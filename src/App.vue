@@ -98,7 +98,6 @@
             <h2 class="m-0 text-[22px] leading-tight text-white">Find feriehus i Danmark</h2>
             <button class="relative inline-grid h-9 w-9 place-items-center border-0 bg-transparent text-white" aria-label="Filter">
               <SlidersHorizontal :size="27" />
-              <span class="absolute -top-[3px] right-0 text-xs font-bold">1</span>
             </button>
           </div>
 
@@ -245,7 +244,7 @@
             <label class="min-w-[176px]">
               <span class="sr-only">Sortér efter</span>
               <select class="h-[32px] w-full rounded border border-[#aebcc6] bg-white py-0 pl-3 pr-8 text-xs text-[#3d3d3d]" v-model="sortBy">
-                <option value="recommended">Sortieren nach</option>
+                <option value="recommended">Sortér efter</option>
                 <option value="priceAsc">Laveste pris</option>
                 <option value="priceDesc">Højeste pris</option>
                 <option value="beachAsc">Kortest til stranden</option>
