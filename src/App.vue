@@ -309,10 +309,7 @@
               />
             </label>
           </section>
-          <p class="mx-0 mb-20 mt-1 hidden max-w-[72ch] text-[17px] leading-[1.65] text-[#3d3d3d] lg:block 2xl:max-w-[900px]">
-            Et særligt højdepunkt: Horns Rev strækker sig langt ud i havet og danner næsten en lagune på sydsiden.
-          </p>
-          <h2 class="mb-[82px] mt-0 hidden text-[31px] font-normal leading-tight text-[#0071bd] lg:block">Book sommerferien i Danmark nu!</h2>
+          <h2 class="mb-9 mt-8 hidden text-[31px] font-normal leading-tight text-[#0071bd] lg:block">Book sommerferien i Danmark nu!</h2>
 
           <section class="card-grid grid gap-4 md:w-full md:gap-6" aria-label="Feriehuse">
             <ListingCard
