@@ -1,26 +1,26 @@
 <template>
-  <div class="mx-auto min-h-screen w-[min(100%,430px)] bg-surface pb-[72px] font-sans text-ink shadow-shell antialiased sm:w-full sm:bg-white sm:pb-0 sm:shadow-none md:flex md:flex-col md:border-t-[5px] md:border-[#202024]">
+  <div class="mx-auto min-h-screen w-full bg-surface pb-[72px] font-sans text-ink shadow-shell antialiased sm:bg-white sm:pb-0 sm:shadow-none md:flex md:flex-col md:border-t-[5px] md:border-[#202024]">
     <header
-      class="sticky top-0 z-30 mx-auto grid h-16 w-full grid-cols-[56px_1fr_56px] items-center border-b border-line bg-panel px-3 text-brand-blue md:static md:h-[82px] md:w-[min(100%,720px)] md:grid-cols-[56px_1fr_56px] md:px-2 lg:w-[min(100%_-_48px,1328px)] lg:grid-cols-[170px_minmax(0,1fr)] lg:border-b-0 lg:p-0 xl:w-[min(100%_-_80px,1520px)] 2xl:w-[min(100%_-_120px,1680px)]"
+      class="sticky top-0 z-30 mx-auto grid h-16 w-full grid-cols-[56px_1fr_56px] items-center border-b border-line bg-panel px-3 text-brand-blue md:static md:h-[72px] md:w-full md:grid-cols-1 md:overflow-hidden md:px-[30px] lg:w-[min(100%_-_48px,1328px)] lg:grid-cols-[120px_minmax(0,1fr)] lg:border-b-0 lg:px-0 xl:w-[min(100%_-_80px,1520px)] xl:grid-cols-[170px_minmax(0,1fr)] 2xl:w-[min(100%_-_120px,1680px)]"
       aria-label="Hovednavigation"
     >
-      <button class="inline-grid h-12 w-12 place-items-center border-0 bg-transparent text-brand-blue lg:hidden" aria-label="Åbn menu">
+      <button class="inline-grid h-12 w-12 place-items-center border-0 bg-transparent text-brand-blue md:hidden" aria-label="Åbn menu">
         <Menu :size="22" stroke-width="2.5" />
       </button>
-      <a class="inline-flex min-w-0 items-center justify-center lg:justify-start" href="#home" aria-label="Esmark">
-        <img class="block h-auto w-[70px] md:w-[82px]" src="https://esmark.de/_nuxt/esmark_logo_de.CE5t-e-d.svg" alt="Esmark" />
+      <a class="inline-flex min-w-0 items-center justify-center md:hidden lg:flex lg:justify-start" href="#home" aria-label="Esmark">
+        <img class="block h-auto w-[70px] lg:w-[70px] xl:w-[82px]" src="https://esmark.de/_nuxt/esmark_logo_de.CE5t-e-d.svg" alt="Esmark" />
       </a>
-      <nav class="hidden h-full min-w-0 items-center justify-between gap-4 lg:flex xl:gap-5 2xl:gap-7" aria-label="Primær navigation">
-        <a class="whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-brand-blue no-underline xl:text-[15px] 2xl:text-base" href="#search">Søg feriehus</a>
-        <a class="whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#denmark">Danmark</a>
-        <a class="whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#dogs">Feriehuse med hund</a>
-        <a class="whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#info">Info</a>
-        <a class="whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#activities">Aktiviteter</a>
-        <a class="hidden whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:inline xl:text-[15px] 2xl:text-base" href="#last-minute">Last Minute</a>
-        <a class="hidden whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:inline xl:text-[15px] 2xl:text-base" href="#blog">Blog</a>
-        <a class="hidden whitespace-nowrap text-sm font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:inline xl:text-[15px] 2xl:text-base" href="#about">Om os</a>
+      <nav class="hidden h-full min-w-0 items-center gap-5 md:flex md:w-max md:justify-start lg:w-auto lg:justify-between lg:gap-4 xl:gap-5 2xl:gap-7" aria-label="Primær navigation">
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-brand-blue no-underline xl:text-[15px] 2xl:text-base" href="#search">Søg feriehus</a>
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#denmark">Danmark</a>
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#dogs">Feriehuse med hund</a>
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#info">Info</a>
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#activities">Aktiviteter</a>
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#last-minute">Last Minute</a>
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#blog">Blog</a>
+        <a class="whitespace-nowrap text-[13px] font-extrabold uppercase tracking-normal text-[#006eb8] no-underline xl:text-[15px] 2xl:text-base" href="#about">Om os</a>
       </nav>
-      <button class="inline-grid h-12 w-12 place-items-center border-0 bg-transparent text-brand-blue lg:hidden" aria-label="Søg">
+      <button class="inline-grid h-12 w-12 place-items-center border-0 bg-transparent text-brand-blue md:hidden" aria-label="Søg">
         <Search :size="21" stroke-width="2.5" />
       </button>
     </header>
@@ -81,14 +81,18 @@
             </select>
           </label>
 
-          <label class="col-span-full flex min-h-[38px] items-center rounded-md border border-[#c7d3dc] bg-panel px-2.5 py-2">
-            <input class="mr-2 h-[18px] w-[18px] accent-brand-blue" v-model="dogsOnly" type="checkbox" />
-            <span class="text-xs text-ink">Hunde tilladt</span>
+          <label class="col-span-full grid min-w-0 gap-1">
+            <span class="text-[10px] font-semibold uppercase leading-none text-[#536676]">Hund</span>
+            <select class="h-[38px] w-full rounded-md border border-[#c7d3dc] bg-panel py-0 pl-3 pr-[34px] text-[13px] text-ink" :value="selectedDogOption" @change="selectDogsByValue($event.target.value)">
+              <option v-for="option in dogOptions" :key="option.value" :value="option.value">
+                {{ option.label }}
+              </option>
+            </select>
           </label>
         </div>
       </section>
 
-      <div class="relative z-[1] grid md:mx-auto md:w-full md:grid-cols-1 md:px-[22px] md:pb-14 lg:w-[min(100%_-_48px,1320px)] lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-6 lg:px-0 lg:pb-16 xl:w-[min(100%_-_80px,1520px)] xl:grid-cols-[380px_minmax(0,1fr)] xl:gap-8 2xl:w-[min(100%_-_80px,1760px)] 2xl:grid-cols-[360px_minmax(0,1fr)] 2xl:gap-10">
+      <div class="relative z-[1] grid md:mx-auto md:w-full md:grid-cols-1 md:px-[30px] md:pb-14 lg:w-[min(100%_-_48px,1320px)] lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-6 lg:px-0 lg:pb-16 xl:w-[min(100%_-_80px,1248px)] xl:grid-cols-[340px_minmax(0,1fr)] xl:gap-7 2xl:w-[min(100%_-_120px,1248px)] 2xl:grid-cols-[340px_minmax(0,1fr)] 2xl:gap-7">
         <aside class="hidden self-start rounded-r bg-[#2286c5] p-6 text-white lg:sticky lg:top-6 lg:mt-10 lg:block" aria-label="Søgning efter feriehus" @keydown.escape="activeSidebarMenu = ''">
           <div class="mb-[18px] flex items-start justify-between gap-[18px]">
             <h2 class="m-0 text-[22px] leading-tight text-white">Find feriehus i Danmark</h2>
@@ -227,6 +231,85 @@
         </aside>
 
         <section class="min-w-0">
+          <div class="hidden min-h-[74px] items-center gap-3 border-y border-[#d7e1e8] bg-[#eaf1f6] px-3 md:flex lg:hidden" :class="showTabletFilters ? '' : 'mb-4'" aria-label="Listeværktøjer">
+            <button
+              class="inline-flex min-h-[32px] flex-1 items-center gap-2 rounded-[5px] border-0 bg-brand-blue px-3 text-sm font-semibold text-white"
+              type="button"
+              :aria-expanded="showTabletFilters"
+              aria-controls="tablet-search-filters"
+              @click="showTabletFilters = !showTabletFilters"
+            >
+              <Search :size="16" stroke-width="2.5" />
+              Søgefilter
+            </button>
+            <label class="min-w-[176px]">
+              <span class="sr-only">Sortér efter</span>
+              <select class="h-[32px] w-full rounded border border-[#aebcc6] bg-white py-0 pl-3 pr-8 text-xs text-[#3d3d3d]" v-model="sortBy">
+                <option value="recommended">Sortieren nach</option>
+                <option value="priceAsc">Laveste pris</option>
+                <option value="priceDesc">Højeste pris</option>
+                <option value="beachAsc">Kortest til stranden</option>
+                <option value="ratingDesc">Bedste bedømmelser</option>
+              </select>
+            </label>
+            <div class="flex flex-none items-center gap-2 text-[#8a98a4]" aria-label="Visning">
+              <List :size="20" class="text-[#4b5963]" />
+              <Grid2X2 :size="18" />
+              <MapPin :size="18" />
+            </div>
+          </div>
+          <section
+            v-if="showTabletFilters"
+            id="tablet-search-filters"
+            class="mb-4 hidden grid-cols-[minmax(0,1.4fr)_minmax(110px,0.7fr)_minmax(150px,0.9fr)_auto] gap-3 border-b border-[#d7e1e8] bg-[#f4f8fb] px-3 py-3 md:grid lg:hidden"
+            aria-label="Søgefilter"
+          >
+            <label class="grid min-w-0 gap-1">
+              <span class="text-[10px] font-semibold uppercase leading-none text-[#536676]">Område</span>
+              <select class="h-10 w-full rounded border border-[#b9c7d0] bg-white py-0 pl-3 pr-8 text-sm text-ink" v-model="selectedCity">
+                <option value="all">Alle områder</option>
+                <option v-for="city in cities" :key="city" :value="city">
+                  {{ city }}
+                </option>
+              </select>
+            </label>
+
+            <label class="grid min-w-0 gap-1">
+              <span class="text-[10px] font-semibold uppercase leading-none text-[#536676]">Personer</span>
+              <select class="h-10 w-full rounded border border-[#b9c7d0] bg-white py-0 pl-3 pr-8 text-sm text-ink" v-model.number="minPersons">
+                <option :value="0">Alle</option>
+                <option :value="4">4+</option>
+                <option :value="6">6+</option>
+                <option :value="8">8+</option>
+                <option :value="10">10+</option>
+              </select>
+            </label>
+
+            <label class="grid min-w-0 gap-1">
+              <span class="text-[10px] font-semibold uppercase leading-none text-[#536676]">Hund</span>
+              <select class="h-10 w-full rounded border border-[#b9c7d0] bg-white py-0 pl-3 pr-8 text-sm text-ink" :value="selectedDogOption" @change="selectDogsByValue($event.target.value)">
+                <option v-for="option in dogOptions" :key="option.value" :value="option.value">
+                  {{ option.label }}
+                </option>
+              </select>
+            </label>
+
+            <button class="mt-4 inline-flex h-10 items-center justify-center gap-1.5 rounded border-0 bg-white px-3 text-sm font-semibold text-brand-blue" type="button" @click="resetFilters">
+              <RotateCcw :size="16" />
+              Nulstil
+            </button>
+
+            <label class="col-span-full grid min-w-0 gap-1">
+              <span class="text-[10px] font-semibold uppercase leading-none text-[#536676]">Fritekstsøgning</span>
+              <input
+                v-model.trim="freeTextQuery"
+                class="h-10 w-full rounded border border-[#b9c7d0] bg-white px-3 text-sm text-ink"
+                type="search"
+                placeholder="Fritekstsøgning (valgfri)"
+                autocomplete="off"
+              />
+            </label>
+          </section>
           <p class="mx-0 mb-20 mt-1 hidden max-w-[72ch] text-[17px] leading-[1.65] text-[#3d3d3d] lg:block 2xl:max-w-[900px]">
             Et særligt højdepunkt: Horns Rev strækker sig langt ud i havet og danner næsten en lagune på sydsiden.
           </p>
@@ -247,7 +330,7 @@
       </div>
     </main>
 
-    <nav class="fixed inset-x-0 bottom-0 z-20 mx-auto grid h-[58px] w-[min(100%,430px)] grid-cols-4 border-t border-line bg-panel sm:hidden" aria-label="Bundnavigation">
+    <nav class="fixed inset-x-0 bottom-0 z-20 mx-auto grid h-[58px] w-full grid-cols-4 border-t border-line bg-panel sm:hidden" aria-label="Bundnavigation">
       <a class="grid content-center place-items-center gap-[3px] text-[10px] font-medium text-brand-orange no-underline" href="#search">
         <Search :size="18" />
         <span>Søg</span>
@@ -311,6 +394,7 @@ export default {
       dogsOnly: false,
       activeSidebarMenu: '',
       selectedDogOption: 'any',
+      showTabletFilters: false,
       freeTextQuery: '',
       listings: data.hits
     }
@@ -463,6 +547,13 @@ export default {
       this.selectedDogOption = option.value
       this.dogsOnly = option.dogsOnly
       this.activeSidebarMenu = ''
+    },
+    selectDogsByValue(value) {
+      const option = this.dogOptions.find((dogOption) => dogOption.value === value)
+
+      if (option) {
+        this.selectDogs(option)
+      }
     },
     selectCity(city) {
       this.selectedCity = city
