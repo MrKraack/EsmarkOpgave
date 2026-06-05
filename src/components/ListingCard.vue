@@ -111,12 +111,12 @@
         </div>
       </dl>
 
-      <ul class="mb-0 mt-[11px] flex list-none flex-wrap gap-[7px] p-0 md:mt-2 md:gap-2 xl:mt-3">
-        <li v-if="changeDay" class="inline-flex min-h-6 max-w-full items-center gap-1 rounded-full bg-[#dff1fb] px-2 py-1 text-[10px] font-semibold leading-none text-[#006cae] md:min-h-6 md:px-2 md:py-1 md:text-[11px] xl:min-h-7 xl:px-3 xl:py-1.5 xl:text-xs">
+      <ul class="mb-0 mt-[11px] flex list-none flex-wrap gap-[7px] p-0 md:mt-2 md:flex-nowrap md:gap-1.5 xl:mt-3 xl:gap-2">
+        <li v-if="changeDay" class="inline-flex min-h-6 min-w-0 max-w-full flex-shrink items-center gap-1 rounded-full bg-[#dff1fb] px-2 py-1 text-[10px] font-semibold leading-none text-[#006cae] md:min-h-6 md:px-1.5 md:py-1 md:text-[10px] xl:min-h-7 xl:px-3 xl:py-1.5 xl:text-xs">
           <CalendarCheck class="shrink-0 md:h-3.5 md:w-3.5 xl:h-4 xl:w-4" :size="13" />
           <span class="min-w-0 truncate">{{ changeDay }}</span>
         </li>
-        <li v-if="hasFreeCleaning" class="inline-flex min-h-6 max-w-full items-center gap-1 rounded-full bg-[#ffe1cc] px-2 py-1 text-[10px] font-semibold leading-none text-[#9e4b00] md:min-h-6 md:px-2 md:py-1 md:text-[11px] xl:min-h-7 xl:px-3 xl:py-1.5 xl:text-xs">
+        <li v-if="hasFreeCleaning" class="inline-flex min-h-6 min-w-0 max-w-full flex-shrink items-center gap-1 rounded-full bg-[#ffe1cc] px-2 py-1 text-[10px] font-semibold leading-none text-[#9e4b00] md:min-h-6 md:px-1.5 md:py-1 md:text-[10px] xl:min-h-7 xl:px-3 xl:py-1.5 xl:text-xs">
           <Sparkles class="shrink-0 md:h-3.5 md:w-3.5 xl:h-4 xl:w-4" :size="13" />
           <span class="min-w-0 truncate">Slutrengøring inkluderet</span>
         </li>
