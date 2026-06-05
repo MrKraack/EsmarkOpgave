@@ -10,11 +10,6 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
 
 ## Framework Valg
 Jeg har valgt at bruge: Vue
